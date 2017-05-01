@@ -54,6 +54,8 @@ public class MqServiceImpl implements MqService {
     @Autowired
     private RepositoryVerificationService repositoryVerificationService;
 
+    private String unusedMemberVariable;
+
     @Override
     public void startRepositoryVerification(Repository repository) {
         this.jmsTemplate.send(queue, new MessageCreator() {
