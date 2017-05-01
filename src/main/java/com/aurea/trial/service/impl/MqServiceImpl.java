@@ -80,10 +80,10 @@ public class MqServiceImpl implements MqService {
         repositoryVerificationService.verifyRepository(repository);
     }
 
-    private void unusedMethod(String userParameter, String unusedParameter) {
+    private void unusedMethod(String usedParameter, String unusedParameter) {
         int unusedLocalVariable = 0;
         int usedLocalVariable = 10;
-        unusedParameter = unusedParameter;
+        unusedParameter = usedParameter;
         unusedLocalVariable = usedLocalVariable;
     }
 
